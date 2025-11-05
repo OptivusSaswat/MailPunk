@@ -1,10 +1,16 @@
+"use client";
+
+import React from "react";
 import { Button } from "@/components/ui/button";
 
-
-export default async function Home() {
+/**
+ * Home page component.
+ * This file is a client component because it directly uses the `Button`
+ * component from the UI library, which is a client component.
+ */
+export default function Home(): JSX.Element {
   return (
-    // <h1 className=" text-8xl text-slate-400">Hello World</h1>
-    <div className=" h-screen flex items-center justify-center">
+    <div className="h-screen flex items-center justify-center">
       <Button>LandingPage</Button>
     </div>
   );
